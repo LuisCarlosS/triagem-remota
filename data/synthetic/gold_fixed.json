@@ -1,0 +1,107 @@
+[
+  {
+    "case_id": "SYN-FIX-001",
+    "idade_anos": 58,
+    "sintomas": ["dor_toracica", "falta_ar", "palpitacoes"],
+    "sinais_vitais": {
+      "frequencia_cardiaca_bpm": 118,
+      "pressao_sistolica_mmhg": 140,
+      "temperatura_celsius": 36.8,
+      "saturacao_o2_percent": 91
+    },
+    "duracao_horas": 2,
+    "comorbidades_simuladas": ["hipertensao"],
+    "timestamp_simulado": "2026-01-15T08:30:00",
+    "rotulo_ouro": "emergencia"
+  },
+  {
+    "case_id": "SYN-FIX-002",
+    "idade_anos": 72,
+    "sintomas": ["convulsao"],
+    "sinais_vitais": {
+      "frequencia_cardiaca_bpm": 105,
+      "pressao_sistolica_mmhg": 150,
+      "temperatura_celsius": 37.2,
+      "saturacao_o2_percent": 96
+    },
+    "duracao_horas": 0.5,
+    "comorbidades_simuladas": ["nenhuma"],
+    "timestamp_simulado": "2026-01-16T14:00:00",
+    "rotulo_ouro": "emergencia"
+  },
+  {
+    "case_id": "SYN-FIX-003",
+    "idade_anos": 34,
+    "sintomas": ["coriza", "tosse"],
+    "sinais_vitais": {
+      "frequencia_cardiaca_bpm": 78,
+      "pressao_sistolica_mmhg": 118,
+      "temperatura_celsius": 36.5,
+      "saturacao_o2_percent": 98
+    },
+    "duracao_horas": 48,
+    "comorbidades_simuladas": ["nenhuma"],
+    "timestamp_simulado": "2026-01-10T10:00:00",
+    "rotulo_ouro": "autocuidado"
+  },
+  {
+    "case_id": "SYN-FIX-004",
+    "idade_anos": 45,
+    "sintomas": ["febre", "dor_cabeca"],
+    "sinais_vitais": {
+      "frequencia_cardiaca_bpm": 92,
+      "pressao_sistolica_mmhg": 122,
+      "temperatura_celsius": 39.2,
+      "saturacao_o2_percent": 97
+    },
+    "duracao_horas": 18,
+    "comorbidades_simuladas": ["nenhuma"],
+    "timestamp_simulado": "2026-01-12T20:00:00",
+    "rotulo_ouro": "urgente"
+  },
+  {
+    "case_id": "SYN-FIX-005",
+    "idade_anos": 29,
+    "sintomas": ["dor_articular_leve", "fraqueza"],
+    "sinais_vitais": {
+      "frequencia_cardiaca_bpm": 72,
+      "pressao_sistolica_mmhg": 115,
+      "temperatura_celsius": 36.9,
+      "saturacao_o2_percent": null
+    },
+    "duracao_horas": 120,
+    "comorbidades_simuladas": ["nenhuma"],
+    "timestamp_simulado": "2026-01-08T09:00:00",
+    "rotulo_ouro": "autocuidado"
+  },
+  {
+    "case_id": "SYN-FIX-006",
+    "idade_anos": 81,
+    "sintomas": ["fraqueza", "tontura"],
+    "sinais_vitais": {
+      "frequencia_cardiaca_bpm": 88,
+      "pressao_sistolica_mmhg": 128,
+      "temperatura_celsius": 36.7,
+      "saturacao_o2_percent": 95
+    },
+    "duracao_horas": 12,
+    "comorbidades_simuladas": ["diabetes"],
+    "timestamp_simulado": "2026-01-18T07:00:00",
+    "rotulo_ouro": "urgente"
+  },
+  {
+    "case_id": "SYN-001",
+    "idade_anos": 40,
+    "sintomas": ["dor_toracica", "falta_ar"],
+    "sinais_vitais": {
+      "frequencia_cardiaca_bpm": 110,
+      "pressao_sistolica_mmhg": 130,
+      "temperatura_celsius": 37.0,
+      "saturacao_o2_percent": 94
+    },
+    "duracao_horas": 1,
+    "comorbidades_simuladas": ["cardiopatia"],
+    "timestamp_simulado": "2026-01-20T11:00:00",
+    "rotulo_ouro": "emergencia"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IntakeCaseSintetico",
+  "type": "object",
+  "required": ["case_id", "idade_anos", "sintomas", "sinais_vitais", "duracao_horas"],
+  "properties": {
+    "case_id": { "type": "string" },
+    "idade_anos": { "type": "integer", "minimum": 0, "maximum": 120 },
+    "sintomas": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "sinais_vitais": {
+      "type": "object",
+      "required": [
+        "frequencia_cardiaca_bpm",
+        "pressao_sistolica_mmhg",
+        "temperatura_celsius"
+      ],
+      "properties": {
+        "frequencia_cardiaca_bpm": { "type": "integer", "minimum": 30, "maximum": 220 },
+        "pressao_sistolica_mmhg": { "type": "integer", "minimum": 70, "maximum": 250 },
+        "temperatura_celsius": { "type": "number", "minimum": 34, "maximum": 42 },
+        "saturacao_o2_percent": {
+          "type": ["integer", "null"],
+          "minimum": 50,
+          "maximum": 100
+        }
+      }
+    },
+    "duracao_horas": { "type": "number", "minimum": 0 },
+    "comorbidades_simuladas": { "type": "array", "items": { "type": "string" } },
+    "timestamp_simulado": { "type": "string", "format": "date-time" },
+    "rotulo_ouro": {
+      "enum": ["emergencia", "urgente", "rotina", "autocuidado"]
+    }
+  }
+}
